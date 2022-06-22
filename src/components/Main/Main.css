@@ -1,0 +1,26 @@
+.main {
+    height: calc(100vh - 91px);
+    width: 100%;
+    background-image: url("../../assets/images/reactjs-icon-main.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main .main__container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4.375rem;
+}
+
+.main .main__container .main__title {
+    font-weight: 700;
+    font-size: 2.44125rem;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    padding-bottom: 1.875rem;
+}
+
+.main .main__container .main__list li::marker {
+    color: var(--light-blue);
+    font-size: 1.4rem;
+}

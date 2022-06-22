@@ -1,0 +1,38 @@
+.header {
+    height: 91px;
+    background-color: var(--header-bg);
+}
+
+.header .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header .header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .header__logo .header-img {
+    width: 28.93px;
+    height: 28.93px;
+    object-fit: cover;
+    margin-right: 0.5rem;
+}
+
+.header .header__logo .header-title {
+    font-size: 1.390625rem;
+    font-weight: 700;
+    color: var(--light-blue);
+}
+
+.header .header__project--title h3 {
+    color: var(--react-course);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px;
+}
