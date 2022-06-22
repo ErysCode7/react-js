@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --body-bg: #1A1B21;
+    --color-white: #FFFFFF;
+    --footer: #161619;
+}
+
 html,
 body {
     font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
     font-size: 100%;
     padding: 0;
     margin: 0;
+    background-color: var(--body-bg);
+    color: var(--color-white);
 }
 
 ul,
@@ -31,4 +39,144 @@ a,
 a::before,
 a::after {
     text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    /* height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 317px 1fr 64px;
+    overflow-y: hidden; */
+}
+
+.main .main__image {
+    width: 100%;
+    height: 317px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main .main__contents {
+    width: 317px;
+    margin: 0 auto;
+    margin-top: 1.875rem;
+    text-align: center;
+}
+
+.main .main__contents .main-name {
+    font-weight: 700;
+    font-size: 1.5625rem;
+    line-height: 30px;
+}
+
+.main .main__contents .main-role {
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 15px;
+    color: #F3BF99;
+    margin-top: 0.5rem;
+}
+
+.main .main__contents .main-buttons {
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .main__contents .main-buttons button {
+    border: none;
+    outline: none;
+    width: 115px;
+    height: 34px;
+    padding: 9px 13px 9px 11px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .main .main__contents .main-buttons button {
+        transition: all 300ms ease;
+    }
+
+    .main .main__contents .main-buttons button:hover {
+        transform: scale(105%);
+    }
+}
+
+.main .main__contents .main-buttons .contact-img {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+}
+
+.main .main__contents .main-buttons .main-email--btn {
+    background-color: #ffffff;
+}
+
+.main .main__contents .main-buttons .main-linkedin--btn {
+    background-color: #5093E2;
+    color: #ffffff;
+}
+
+.main .main--description {
+    padding: 1.25rem 0;
+    text-align: left;
+}
+
+.main .main--description h4 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #F5F5F5;
+}
+
+.main .main--description p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #DCDCDC;
+}
+
+
+@media(max-width: 500px) {
+    .main .main--description h4 {
+        font-size: 1rem;
+    }
+
+    .main .main--description p {
+        font-size: 10.24px;
+    }
+}
+
+
+.footer {
+    background-color: var(--footer);
+    height: 64px;
+}
+
+.footer .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.footer .footer-icons {
+    width: 25px;
+    height: 25px;
+    color: #918E9B;
+}
+
+@media(max-width: 768px) {
+    .main .main__image .hero-img {
+        height: 317px;
+        width: 100%;
+    }
 }
