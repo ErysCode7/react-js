@@ -14,9 +14,9 @@ body {
 
 ul,
 li {
+    list-style: none;
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 
 h1,
@@ -31,4 +31,16 @@ a,
 a::before,
 a::after {
     text-decoration: none;
+}
+
+:root {
+    --header-bg: #F55A5A;
+    --dark-font: #2B283A;
+    --gray-font: #918E9B;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3.125rem;
 }
