@@ -1,0 +1,28 @@
+.hero {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5625rem;
+}
+
+
+.hero .hero__image .hero-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-height: 600px;
+
+}
+
+
+@media(max-width: 600px) {
+    .hero .hero__image .hero-img {
+        width: 395.91px;
+        height: 232px;
+    }
+}
+
+@media(max-width: 480px) {
+    .hero .hero__image .hero-img {
+        width: 100%;
+    }
+}
