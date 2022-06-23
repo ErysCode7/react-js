@@ -7,13 +7,6 @@
     padding-bottom: 1.25rem;
 }
 
-.blogs .blogs__container {
-    flex: 1;
-}
-
-.blogs .blogs__container .blog__image {
-    height: 100%;
-}
 
 .blogs .blogs__container .blog-img {
     display: block;
@@ -22,17 +15,77 @@
     height: 500px;
 }
 
+.blogs .blogs__container .blog__contents {
+    margin-top: 0.5rem;
+}
+
+.blogs .blogs__container .blog__contents .blog--ratings {
+    display: flex;
+    align-items: center;
+}
+
+.blogs .blogs__container .blog__contents .star-svg {
+    display: block;
+    width: 14px;
+    height: 14px;
+    color: #FE395C;
+    border-radius: 0.5px;
+    margin-right: 0.5rem;
+}
+
+.blogs .blogs__container .blog__contents .blog-ratings {
+    margin-right: 0.5rem;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 110%;
+    /* identical to box height, or 13px */
+    color: #222222;
+}
+
+.blogs .blogs__container .blog__contents .blog-stocks {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 110%;
+    /* identical to box height, or 13px */
+    color: #918E9B;
+    margin-right: 0.5rem;
+}
+
+.blogs .blogs__container .blog__contents .blog-location {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 110%;
+    /* identical to box height, or 13px */
+    color: #918E9B;
+}
+
+.blogs .blogs__container .blog__contents .blog-title {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 110%;
+    /* identical to box height, or 13px */
+    color: #222222;
+}
+
+@media(max-width: 800px) {
+    .blogs .blogs__container .blog-img {
+        width: unset;
+        height: 100%;
+    }
+}
+
 @media(max-width: 600px) {
     .blogs {
         gap: 2rem;
     }
 
-    .blogs .blogs__container {
-        flex: unset;
+    .blogs .blogs__container .blog-img {
+        width: unset
     }
 
-    .blogs .blogs__container .blog-img {
-        width: 100%;
-        height: 235px;
+    .blogs .blogs__container .blog__contents .blog-ratings,
+    .blogs .blogs__container .blog__contents .blog-stocks,
+    .blogs .blogs__container .blog__contents .blog-title {
+        font-size: 12px;
     }
 }

@@ -9,7 +9,7 @@ const blogs = [
         title: "Life lessons with Katie Zaferes",
         image: MarathonImage,
         imageAlt: "Marathon",
-        rating: 5.0,
+        rating: "5.0",
         stocks: 6,
         location: "USA",
         price: 136
@@ -19,7 +19,7 @@ const blogs = [
         title: "Learn wedding photography",
         image: WeddingImage,
         imageAlt: "Wedding Photo",
-        rating: 5.0,
+        rating: "5.0",
         stocks: 3,
         location: "USA",
         price: 125
@@ -29,7 +29,7 @@ const blogs = [
         title: "Group Mountain Biking",
         image: BikeImage,
         imageAlt: "Mountain Bike",
-        rating: 4.8,
+        rating: "4.8",
         stocks: 2,
         location: "USA",
         price: 50
